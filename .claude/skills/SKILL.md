@@ -177,6 +177,13 @@ description: Interactive workflow for Claude to draft engaging note articles fro
 - 記事公開後、ユーザーがnoteのURLと status を "published" に手動更新
 - 関連記事は、タグまたはカテゴリが一致し、URLが設定されている記事から自動抽出
 
+**スケジュール管理**:
+- 記事作成完了後、`04_schedule/schedule_2025_2026.md` を読み込み
+- 記事のpublished_dateと一致する日付の行を検索
+- その行のタイトル部分に打ち消し線（`~~タイトル~~`）を追加
+- 例: `| 2025/12/18 | 乾燥するオフィスの救世主！高機能卓上加湿器 7選 |` → `| 2025/12/18 | ~~乾燥するオフィスの救世主！高機能卓上加湿器 8選~~ |`
+- 打ち消し線により、その日の記事が完成済みであることを一目で確認できるようにする
+
 ## Style & Tone チェックリスト
 
 - **Warm & Practical**: 温かい語り口と実用的なTipsをセットで
