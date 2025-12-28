@@ -1,19 +1,28 @@
 # Note Writer
 
-note向けガジェット紹介記事をAIで生成するためのスキル集と運用メモを管理するリポジトリです。
+note向けガジェット紹介記事をAIで効率的に生成・管理するためのリポジトリです。
+「毎日ガジェット便り」のブランド指針に基づき、リサーチから執筆、サムネイル生成までの一連のワークフローを自動・半自動化しています。
 
-## ファイル構成
-- `.claude/skills/SKILL.md`: Claudeに読み込ませるメインスキル。note記事作成の4フェーズワークフローを定義
-- `.docs/note_account_design.md`: アカウント「毎日ガジェット便り」のブランド方針やコンテンツ運用メモ
-- `.docs/product_search.md`: Amazon商品リサーチのガイドライン
-- `.docs/magazines.md`: noteマガジン5カテゴリの定義
-- `article/`: 公開済み・ドラフトのnote記事
-- `article/_metadata.json`: 記事メタデータ管理
+## ディレクトリ構成
 
-## 使い方
-1. `.docs/note_account_design.md`でアカウントの方向性やトーンを確認
-2. ご自身のテーマと商品情報を整理し、`SKILL.md`のPhase 0テンプレに沿ってClaudeへ入力
-3. 出力されたnote記事ドラフトを加筆修正しつつ公開
+- `01_analytics/`: noteのアクセス解析やAmazonアソシエイトの収益データ・分析レポート。
+- `02_article/`: 執筆した記事本文（Markdown）と管理用メタデータ（`_metadata.json`）。
+- `03_schedule/`: 投稿予定の記事タイトルやスケジュールの管理。
+- `04_thumbnail/`: 記事用にAIで生成したサムネイル画像。
+- `.agent/rules/`: 各工程でAIが参照する指示書（スキルの定義）。
+    - `note-writer.md`: メインの執筆ワークフロー。
+    - `article-title-fix.md`: 読まれるタイトルの生成ルール。
+    - `generete-thumbnail.md`: 統一感のあるサムネイル画像の生成指示。
+    - `setup-drafts.md`: スケジュールからの下書き一括生成。
+- `.docs/`: プロジェクトの基盤ドキュメント。
+    - `note_account_design.md`: ブランド方針やトーン＆マナー。
+    - `product_search.md`: 商品リサーチのガイドライン。
+    - `magazines.md`: noteマガジンのカテゴリ定義。
 
-## 補足
-- 他のSNS（XやInstagramなど）に展開したい場合は、`SKILL.md`に追加ルールを追記して拡張してください。
+## ワークフローの概要
+
+1. **構成・リサーチ**: `.agent/rules/note-writer.md` に基づき、ターゲットと商品の選定を行います。
+2. **執筆**: リサーチ結果を元に、ブランドトーンに合わせた記事を生成します。
+3. **タイトル最適化**: `article-title-fix.md` を使い、クリック率を高めるタイトルを選定します。
+4. **画像生成**: `generete-thumbnail.md` により、DALL-E 3などで記事にマッチした画像を生成します。
+5. **管理**: `_metadata.json` を更新し、進捗や関連記事のリンクを管理します。

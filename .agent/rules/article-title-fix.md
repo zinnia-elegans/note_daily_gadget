@@ -7,7 +7,7 @@ description: noteタイトル変更
 ユーザーが「このタイトルを変えたい」「方向性を変えたい」と指示した際に、記事のスケジュールとの整合性を保ちつつ、具体的で魅力的な代替案を提示する。
 
 ### 実行条件
-- ユーザーから既存のタイトル（例：[04_schedule/schedule_2025_2026.md](cci:7://file:///Users/shoheishimizu/Knowledge/note-writer/04_schedule/schedule_2025_2026.md:0:0-0:0) にあるもの）に対する変更依頼があった場合。
+- ユーザーから既存のタイトル（例：[03_schedule/schedule_2026.md](cci:7://file:///Users/shoheishimizu/Knowledge/note-writer/03_schedule/schedule_2026.md:0:0-0:0) にあるもの）に対する変更依頼があった場合。
 - 記事の方向性を変えたいという要望があった場合。
 
 ### 提案ルール
@@ -31,7 +31,7 @@ description: noteタイトル変更
    - 具体的な商品カテゴリが連想できる内容にし、末尾は必ず「**◯選**」とする。
 6. **具体例の併記と重複回避**:
    - 各案に「例：商品名」を添える。
-   - [schedule_2025_2026.md](file:///Users/shoheishimizu/Knowledge/note-writer/04_schedule/schedule_2025_2026.md) を確認し、前後1ヶ月の記事と内容が被らないようにする。
+   - [schedule_2026.md](file:///Users/shoheishimizu/Knowledge/note-writer/03_schedule/schedule_2026.md) を確認し、前後1ヶ月の記事と内容が被らないようにする。
 7. **最終確認（音読）**:
    - 提案前に必ずセルフ音読を行い、リズムが良く、息苦しくないか確認する。
 

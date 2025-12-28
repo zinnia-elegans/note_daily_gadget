@@ -5,7 +5,7 @@ description: スケジュールから記事ドラフトを一括生成
 
 # Setup Drafts from Schedule
 ## 概要
-[04_schedule/schedule_2025_2026.md](cci:7://file:///Users/shoheishimizu/Knowledge/note-writer/04_schedule/schedule_2025_2026.md:0:0-0:0) から指定された期間（例:「1月」）の記事タイトルを読み込み、記事生成に必要な「ドラフトファイル（空箱）」を一括で作成するワークフロー。
+[03_schedule/schedule_2026.md](cci:7://file:///Users/shoheishimizu/Knowledge/note-writer/03_schedule/schedule_2026.md:0:0-0:0) から指定された期間（例:「1月」）の記事タイトルを読み込み、記事生成に必要な「ドラフトファイル（空箱）」を一括で作成するワークフロー。
 ## 手順
 1.  **対象の特定**
     - ユーザーから指定された期間のタイトルと掲載日をスケジュールから抽出する。
