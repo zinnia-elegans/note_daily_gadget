@@ -2,7 +2,7 @@ import csv
 
 def main():
     try:
-        with open('2025-analytics.csv', 'r') as f:
+        with open('../01_data/2025-analytics.csv', 'r') as f:
             reader = csv.DictReader(f)
             data = list(reader)
     except FileNotFoundError:
